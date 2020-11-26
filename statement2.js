@@ -1,0 +1,38 @@
+var b=9,v=2,s=3;
+
+var pv=10,ps=15,profit=0;
+
+if(ps>pv){
+   while(s>0 && b>1 ){
+      b=b-2;
+      s--;
+      profit=profit+ps
+   }
+   while(v>0 && v>1)
+   {
+      v=v-1;
+      b=b-2;
+      profit=profit+pv;
+      
+
+   }
+
+
+}
+else{
+    while(v>0 && v>1)
+   {
+      v=v-1;
+      b=b-2;
+      profit=profit+pv;
+      
+
+   }
+   while(s>0 && b>1 ){
+    b=b-2;
+    s--;
+    profit=profit+ps
+ }
+
+}
+console.log(profit);
